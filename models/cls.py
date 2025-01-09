@@ -37,6 +37,7 @@ class Cls(BaseModel):
         db_table = 'cls'
         indexes = [
             models.Index(fields=['id'], name='cls_id'),
+            models.Index(fields=['deleted'], name='cls_deleted'),
             models.Index(fields=['finish_date'], name='cls_finish_date'),
             models.Index(fields=['start_date'], name='cls_start_date'),
             models.Index(fields=['trainer'], name='cls_trainer'),

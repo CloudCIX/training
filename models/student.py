@@ -35,6 +35,7 @@ class Student(BaseModel):
         db_table = 'student'
         indexes = [
             models.Index(fields=['id'], name='student_id'),
+            models.Index(fields=['deleted'], name='student_deleted'),
             models.Index(fields=['notes'], name='student_notes'),
             models.Index(fields=['user_id'], name='student_user_id'),
         ]

@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 4.0.0
+Date: 2025-01-09
+
+- CloudCIX Major release of Version 4
+- CloudCIX Framework base incremented to Python 3.10
+- CloudCIX Framework base incremented to Django 5.0.10
+
 ## 3.0.0
 Date: 2024-06-21
 

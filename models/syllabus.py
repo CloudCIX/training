@@ -22,6 +22,7 @@ class Syllabus(BaseModel):
         db_table = 'syllabus'
         indexes = [
             models.Index(fields=['id'], name='syllabus_id'),
+            models.Index(fields=['deleted'], name='syllabus_deleted'),
             models.Index(fields=['name'], name='syllabus_name'),
         ]
 

@@ -8,4 +8,4 @@ The Training records consist of the following elements:
 - Student: A Student is an User of CloudCIX Membership. Students can be in different Classes and the trainer of each
   Class will add notes about the Student in its training record.
 """
-__version__ = '3.0.0'
+__version__ = '4.0.0'

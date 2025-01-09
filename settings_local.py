@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 DATABASES = {
     'training': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'training',
         'USER': PGSQLAPI_USER,
         'PASSWORD': PGSQLAPI_PASSWORD,
@@ -29,7 +29,7 @@ DATABASES = {
         'PORT': '5432',
     },
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'django_default',
         'USER': PGSQLAPI_USER,
         'PASSWORD': PGSQLAPI_PASSWORD,

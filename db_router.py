@@ -44,7 +44,8 @@ class TrainingRouter:
         """
         if model._meta.app_label == 'training':
             return 'training'
-        return None
+        # We don't write to any other DB during test so we can safely ignore this line from coverage
+        return None  # pragma: no cover
 
     def allow_relation(self, model1: Type[Model], model2: Type[Model], **hints: Dict[str, Any]) -> Optional[bool]:
         """
